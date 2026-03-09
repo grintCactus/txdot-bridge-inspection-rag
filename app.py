@@ -63,7 +63,10 @@ def check_login():
     if submitted:
         # Read credentials from secrets.toml (local) or env vars (Railway)
         # Env var format: CRED_<USERNAME>=<PASSWORD>  e.g. CRED_ADMIN=txdot2024
-        credentials = dict(st.secrets.get("credentials", {}))
+        try:
+            credentials = dict(st.secrets.get("credentials", {}))
+        except Exception:
+            credentials = {}
         for key, val in os.environ.items():
             if key.startswith("CRED_"):
                 user = key[5:].lower()
