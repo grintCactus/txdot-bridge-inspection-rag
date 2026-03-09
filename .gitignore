@@ -1,0 +1,28 @@
+# API keys — never commit
+.env
+
+# Virtual environment
+venv/
+
+# ChromaDB index (can be rebuilt with build_index.py)
+db/
+
+# Parsed JSON cache (regenerated from PDFs)
+data/parsed/
+data/chunks/
+
+# PDF files (too large, proprietary)
+../resource/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Streamlit cache
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
+Thumbs.db

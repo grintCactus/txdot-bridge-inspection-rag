@@ -1,0 +1,227 @@
+[
+  {
+    "question": "What is the standard routine bridge inspection interval?",
+    "expanded_query": "What is the standard routine bridge inspection interval?",
+    "answer": "## Standard Routine Bridge Inspection Interval\n\nBased on the TxDOT Bridge Inspection Manual, the standard routine inspection interval is:\n\n### **Every 24 months** for most bridges\n\n> *\"Conduct these inspections every twenty-four months for most bridges, and every forty-eight months for qualifying concrete culverts and span bridges.\"*\n> [Source: Bridge Inspection Manual, p.33]\n\n---\n\n### Extended Interval: **48 months**\nCertain bridges that meet all qualifying criteria under 23 CFR 650.311 may be inspected at intervals **not to exceed 48 months**. TxDOT adds an additional requirement that **disqualifies bridges containing timber elements** in the load path.\n[Source: Bridge Inspection Manual, p.35]\n\n---\n\n### Reduced Intervals\nSome bridges require **more frequent** inspections:\n- **Every 12 months** — e.g., poor condition ratings (≤3) for deck, superstructure, substructure, culvert, or scour\n- **Every 6 months** — for certain critical conditions\n[Source: Bridge Inspection Manual, p.35]\n\n---\n\n> ⚠️ **Safety Note:** Inspection interval eligibility criteria are detailed and condition-specific. Always verify against the original TxDOT Bridge Inspection Manual and 23 CFR 650.311 before making interval determinations.",
+    "sources_retrieved": [
+      "BIRM p.1340",
+      "BIRM p.1338",
+      "BIM p.37",
+      "BIM p.33",
+      "BIM p.47",
+      "BIRM p.1341",
+      "BIM p.35"
+    ],
+    "top_distance": 0.5297
+  },
+  {
+    "question": "Under what conditions can a bridge qualify for a 48-month extended inspection interval?",
+    "expanded_query": "Under what conditions can a bridge qualify for a 48-month extended inspection interval?",
+    "answer": "# Criteria for 48-Month Extended Inspection Interval\n\n## Federal Requirements (23 CFR 650.311)\n\nUnder **Method 1** of the federal risk-based inspection framework, a bridge may qualify for a routine inspection interval not to exceed **48 months** if it meets **all** of the following criteria:\n\n| Criterion | Requirement |\n|-----------|-------------|\n| Deck Condition Rating | ≥ 6 (Satisfactory or better) |\n| Superstructure Condition Rating | ≥ 6 |\n| Substructure Condition Rating | ≥ 6 |\n| Culvert Condition Rating | ≥ 6 |\n| Channel Condition | ≥ 6 |\n| Channel Protection Condition | ≥ 6 |\n| Inventory Load Rating Factor | ≥ 1.0 (HS-20 or HL-93) |\n| Routine Permit Loads | Coded A or N (unrestricted) |\n| Scour Vulnerability | Coded A or B (stable) |\n| Scour Condition Rating | ≥ 6 |\n| Span Material | Concrete or Steel only (C01–C05 or S01–S05) |\n| Span Type | Must be within approved types (A01, B02-B03, F01-F02, G01-G08, P01-P02, or S01-S02) |\n\n[Source: Bridge Inspection Manual, p.35; FHWA BIRM, p.1338]\n\n---\n\n## Additional TxDOT-Specific Requirements\n\nTxDOT adds several **additional eligibility criteria** beyond the federal baseline:\n\n- **No timber elements** in the load path (deck, superstructure, or substructure)\n- **Fatigue Details (Item B.IR.02) = N** (no fatigue details with finite life)\n- **Minimum Vertical Clearance ≥ 14.0 ft** (Items 53 and 54B ≥ 0420)\n- The bridge must have received an **initial inspection**, been **in service for 24 months**, and received its **next routine inspection** before becoming eligible\n\n[Source: Bridge Inspection Manual, p.35–37]\n\n---\n\n## Pre-Eligibility Requirement\n\n> Any new, rehabilitated, or structurally modified bridge must receive an initial inspection, be in service for **24 months**, and receive its **next routine inspection** before being eligible for intervals greater than 24 months.\n\n[Source: Bridge Inspection Manual, p.37; FHWA BIRM, p.1338]\n\n---\n\n## Administrative Requirements\n\nState transportation departments implementing the 48-month extended interval policy **must**:\n1. Develop and document an extended interval policy\n2. **Notify FHWA in writing** prior to implementation\n\n[Source: FHWA BIRM, p.1338]\n\n---\n\n> ⚠️ **Safety Notice:** Extended interval eligibility involves multiple concurrent criteria. Always verify each bridge's qualification against the original documents and applicable NBI coding before assigning a 48-month interval. When in doubt, consult your District Bridge Inspection Coordinator.",
+    "sources_retrieved": [
+      "BIRM p.1340",
+      "BIRM p.1338",
+      "BIM p.37",
+      "BIM p.33",
+      "BIM p.47",
+      "BIRM p.1341",
+      "BIM p.35"
+    ],
+    "top_distance": 0.4807
+  },
+  {
+    "question": "What are the inspection interval tolerance rules?",
+    "expanded_query": "What are the inspection interval tolerance rules?",
+    "answer": "## Inspection Interval Tolerance Rules\n\nBased on the reference documents, the inspection interval tolerance rules are as follows:\n\n---\n\n### Federal Requirements (23 CFR 650.311)\n\n| Inspection Interval | Acceptable Tolerance |\n|---|---|\n| **Less than 24 months** | Up to **2 months** after the month the inspection was due |\n| **24 months or greater** | Up to **3 months** after the month the inspection was due |\n\n> **Exception:** Tolerances beyond these limits due to *rare and unusual circumstances* must be **approved by FHWA in advance** of the inspection due date plus the applicable tolerance period.\n\n[Source: FHWA Bridge Inspector's Reference Manual, p.1341]\n\n---\n\n### TxDOT-Specific Application\n\nTxDOT applies the **same tolerance rules** across multiple inspection types:\n\n- **Routine Inspections** – Standard tolerances above apply\n- **NSTM Inspections** – Same tolerances as Routine Inspections [Source: Bridge Inspection Manual, p.42-43]\n- **Underwater Inspections** – Same tolerances as Routine Inspections [Source: Bridge Inspection Manual, p.47]\n- **IRM/SRM Special Inspections** – Same tolerances as Routine Inspections [Source: Bridge Inspection Manual, p.43]\n\n---\n\n> ⚠️ **Safety Note:** These tolerances are administrative allowances only. Always verify current requirements against the original 23 CFR 650.311 regulations and the most recent TxDOT Bridge Inspection Manual, as requirements may be updated.",
+    "sources_retrieved": [
+      "BIRM p.1340",
+      "BIM p.42",
+      "BIRM p.1338",
+      "BIM p.43",
+      "BIM p.47",
+      "BIRM p.1341",
+      "BIM p.35"
+    ],
+    "top_distance": 0.8165
+  },
+  {
+    "question": "What qualifications are required for a bridge inspection team leader?",
+    "expanded_query": "What qualifications are required for a bridge inspection team leader?",
+    "answer": "# Qualifications for a Bridge Inspection Team Leader\n\n## Federal (NBIS) Minimum Requirements\n\nAccording to the TxDOT Bridge Inspection Manual, a Qualified Team Leader/Certified Bridge Inspector must meet **one** of the following qualification pathways:\n\n### Pathway 1 – Same as Program Manager\nMeet the same qualifications as a Program Manager (PE or 10 years of NBIS experience + FHWA-approved comprehensive training). [Source: Bridge Inspection Manual, p.13]\n\n### Pathway 2 – Licensed Professional Engineer\n- Be a Professional Engineer licensed in the State of Texas; **and**\n- Have at least **6 months** of NBIS bridge inspection experience; **and**\n- Successfully complete an FHWA-approved comprehensive bridge inspection training course with a score of **70% or greater**. [Source: Bridge Inspection Manual, p.13]\n\n### Pathway 3 – Experienced Inspector\n- Minimum of **5 years** of NBIS bridge inspection experience; **and**\n- Successfully complete an FHWA-approved comprehensive bridge inspection training course with a score of **70% or greater**. [Source: Bridge Inspection Manual, p.13]\n\n### Pathway 4 – Engineering Degree + FE Exam\n- Bachelor's degree in engineering or engineering technology from an **ABET-accredited** institution; **and**\n- Successfully passed the **NCEES Fundamentals of Engineering (FE)** examination; **and**\n- **2 years** of NBIS bridge inspection experience; **and**\n- Successfully completed an FHWA-approved comprehensive training course with **70% or greater**. [Source: Bridge Inspection Manual, p.13]\n\n### Pathway 5 – Associate's Degree\n- Associate's degree in engineering or engineering technology from an **ABET-accredited** institution; **and**\n- **4 years** of NBIS bridge inspection experience; **and**\n- Successfully completed an FHWA-approved comprehensive training course with **70% or greater**. [Source: Bridge Inspection Manual, p.13]\n\n---\n\n## Ongoing Maintenance Requirements\n\nRegardless of the qualification pathway, to **remain current**, a Team Leader must:\n- Complete a cumulative total of **18 hours** of FHWA-approved bridge inspection refresher training over each **60-month period**, beginning from the first 60-month anniversary of completing the comprehensive training course.\n- Maintain **documentation** supporting satisfaction of these requirements.\n- Those qualified under prior NBIS regulations must have met the updated requirements by **June 6, 2024**. [Source: Bridge Inspection Manual, p.13]\n\n---\n\n## Special Inspection Type Requirements\n\n| Inspection Type | Additional Requirements |\n|---|---|\n| **NSTM Inspections** | Must meet Team Leader qualifications + complete FHWA-approved NSTM training with ≥70% score [Source: Bridge Inspection Manual, p.13] |\n| **Underwater Inspections** | Must be a qualified Team Leader + hold a **commercial diver certification** + minimum **2 years** of underwater bridge inspection experience + complete NHI course 130091 [Source: Bridge Inspection Manual, p.23] |\n| **Specialized/Complex Inspections** | Must be precertified in **Work Category 6.2.1** – Complex Bridge Inspection Team Leader [Source: Bridge Inspection Manual, p.23] |\n\n---\n\n## Consultant-Specific Requirements (TxDOT)\n\nFor consultants performing routine bridge inspections under TxDOT contract, Team Leaders must additionally:\n- Be **precertified in Work Category 6.1.1** – Routine Bridge Inspection Team Leader\n- Be a **Licensed Professional Engineer in Texas**\n- Complete **NHI training course 130055** or **130056** (for PEs) and remain current on refresher requirements\n- Complete **NHI course 130053** (Bridge Inspection Refresher Training) within 60 months of the last comprehensive or refresher class [Source: Bridge Inspection Manual, p.20]\n\n---\n\n> ⚠️ **Safety Notice:** These qualifications are safety-critical. Always verify against the current official TxDOT Bridge Inspection Manual and FHWA NBIS regulations (23 CFR 650.309) before making personnel qualification decisions.",
+    "sources_retrieved": [
+      "BIM p.20",
+      "BIM p.23",
+      "BIM p.16",
+      "BIM p.25",
+      "BIM p.13",
+      "BIRM p.68",
+      "BIRM p.70"
+    ],
+    "top_distance": 0.5072
+  },
+  {
+    "question": "What training courses are required for underwater bridge inspectors?",
+    "expanded_query": "What training courses are required for underwater bridge inspectors?",
+    "answer": "## Required Training for Underwater Bridge Inspectors\n\n### Federal Requirement (FHWA/NBIS)\n\nThe primary federal requirement is straightforward:\n\n> *\"An Underwater Bridge Inspection Diver must complete FHWA-approved underwater bridge inspection training and score **70 percent or greater** on an end-of-course assessment.\"*\n> [Source: FHWA Bridge Inspector's Reference Manual, p.1189]\n\nThis requirement is also codified in regulation at **23 CFR 650.309(e)**.\n[Source: FHWA Bridge Inspector's Reference Manual, p.1334]\n\n---\n\n### Approved Training Course\n\nThe standard course fulfilling this requirement is:\n\n- **\"Underwater Bridge Inspection\" (FHWA-NHI-130091)**\n  - Four-day course covering diving operations and underwater bridge inspection management\n  - Topics include: need for underwater inspections, typical defects in underwater members, inspection equipment, planning and hazard analysis, inspection procedures, documentation, and critical findings\n  - Intended for inspector divers performing or overseeing underwater inspections\n\n[Source: FHWA Bridge Inspector's Reference Manual, p.66]\n\n---\n\n### TxDOT-Specific Requirements\n\nFor **underwater bridge inspection Team Leaders**, TxDOT requires all of the following:\n\n1. Qualifications as a **Team Leader for Routine Inspections**\n2. A **commercial diver certification**\n3. A minimum of **two years of underwater bridge inspection experience**\n4. Successful completion of **NHI course 130091 \"Underwater Bridge Inspection\"**\n\nAdditionally:\n> *\"All underwater inspection team members not serving as the Team Leader must also have successfully completed NHI training course 130091 - 'Underwater Bridge Inspection'.\"*\n\n[Source: Bridge Inspection Manual (TxDOT), p.23]\n\n---\n\n### Grandfather Provision\n\nInspectors who met NBIS training requirements **prior to June 6, 2022** are considered to satisfy current training requirements under both federal and TxDOT standards.\n[Source: FHWA Bridge Inspector's Reference Manual, p.1189; Bridge Inspection Manual (TxDOT), p.23]\n\n---\n\n### ⚠️ Safety Reminder\nThese are minimum requirements. Always verify against the original regulatory documents (23 CFR 650.309) and current TxDOT policy, as requirements may be updated.",
+    "sources_retrieved": [
+      "BIRM p.1190",
+      "BIM p.23",
+      "BIRM p.1192",
+      "BIRM p.66",
+      "BIRM p.1334",
+      "BIRM p.1178",
+      "BIRM p.1189"
+    ],
+    "top_distance": 0.5521
+  },
+  {
+    "question": "What are the QC/QA requirements for bridge inspection reports?",
+    "expanded_query": "What are the QC (Quality Control)/QA (Quality Assurance) requirements for bridge inspection reports?",
+    "answer": "# QC/QA Requirements for Bridge Inspection Reports\n\n## Regulatory Foundation\n\nBoth TxDOT and FHWA QC/QA programs are grounded in federal regulation:\n\n> **23 CFR 650.313(p)** requires each state to ensure systematic QC and QA procedures are used to maintain a high degree of accuracy and consistency in the inspection program.\n\n[Source: FHWA Bridge Inspector's Reference Manual, p.73; Bridge Inspection Manual, p.139]\n\n---\n\n## Quality Control (QC) Requirements\n\n### FHWA Framework\nQC procedures must verify that inspection reports are **complete and accurate**, including:\n- Checking inspection report information **before finalization**\n- Verifying load rating calculations\n- Documenting roles, responsibilities, and personnel qualifications\n- Tracking qualifications (experience, training, certifications)\n- Identifying and resolving data errors and omissions\n\n[Source: FHWA Bridge Inspector's Reference Manual, p.1313]\n\n### TxDOT-Specific QC Review Elements\nTxDOT uses **three primary QC review elements**:\n\n| Review Type | Coverage Requirement |\n|---|---|\n| Electronic Documentation Review | **Minimum 10%** of bridges per batch submittal |\n| Bridge Re-Inspection | **Minimum 5%** of total bridges per work authorization |\n| Inspection Team Field Review | **Minimum 2%** of scheduled inspections per work authorization |\n\n[Source: Bridge Inspection Manual, p.134–135]\n\n### Electronic Documentation Review Criteria\nEach reviewed report must confirm:\n- Required documentation is complete and accurate\n- Inspection Team Leader (TL) meets NBIS requirements\n- Load rating analysis is correct (Level I and Level II review)\n- Scour documentation is complete and reflects current conditions\n- Data is consistent with TxDOT and NBIS requirements\n- Documentation is properly uploaded into the Bridge Inspection Management System (BIMS)\n\n[Source: Bridge Inspection Manual, p.135]\n\n### Load Rating Review Levels\n- **Level I**: Verifies correct load limits and proper load limit signs are in place\n- **Level II**: All Level I items, **plus** checking documentation completeness, signatures/seals, consistency of assumptions with field conditions, and accuracy of reported calculations\n\n[Source: Bridge Inspection Manual, p.135]\n\n### Bridge Re-Inspection Selection Criteria\nRe-inspections should include a variety of:\n- Superstructure types (especially those with known problem areas)\n- Span bridges and culverts\n- New or recently rehabilitated structures\n- Structures with load postings or critical findings\n- Work from as many different TLs as possible\n\n[Source: Bridge Inspection Manual, p.135]\n\n---\n\n## Quality Assurance (QA) Requirements\n\n### Definition\n> QA is *\"the use of sampling and other measures to assure the adequacy of quality control procedures in order to verify or measure the quality level of the entire bridge inspection and load rating program.\"*\n\n[Source: Bridge Inspection Manual, p.139; FHWA Bridge Inspector's Reference Manual, p.1313]\n\n### Key QA Procedures (FHWA Framework)\n- Define and document QA roles and responsibilities\n- Establish **review interval parameters** (e.g., review each district once every four years)\n- Use **random sampling** for bridge selection, with focus areas including:\n  - Posted bridges\n  - Bridges programmed for rehabilitation/replacement\n  - Bridges with critical findings\n  - Bridges with unusual condition rating changes (>1 appraisal rating change)\n  - Bridges requiring special inspections (underwater, NSTM)\n- Validate Team Leader qualifications\n- Define \"out-of-tolerance\" thresholds (e.g., **±1 condition rating**, load ratings differing by **>15%**)\n\n[Source: FHWA Bridge Inspector's Reference Manual, p.1315]\n\n### TxDOT QA Scope\nTxDOT's QA program covers three workgroups:\n1. Bridge Division UW and NSTM Units\n2. District Bridge Sections\n3. Consulting Firms\n\n[Source: Bridge Inspection Manual, p.139]\n\n---\n\n## Key Personnel Responsibilities\n\n| Role | QC/QA Responsibility |\n|---|---|\n| **Inspector** | Clearly documents def",
+    "sources_retrieved": [
+      "BIM p.132",
+      "BIM p.139",
+      "BIRM p.1313",
+      "BIRM p.1315",
+      "BIM p.134",
+      "BIM p.135",
+      "BIRM p.73"
+    ],
+    "top_distance": 0.4741
+  },
+  {
+    "question": "What is the difference between a routine inspection and an in-depth inspection?",
+    "expanded_query": "What is the difference between a routine inspection and an in-depth inspection?",
+    "answer": "# Routine Inspection vs. In-Depth Inspection\n\n## Routine Inspection\n\nA **Routine inspection** is a **regularly scheduled, comprehensive inspection** consisting of observations and measurements needed to determine the physical and functional condition of the bridge. Key characteristics include:\n\n- Identifies changes from initial or previously recorded conditions\n- Ensures the structure continues to satisfy present service conditions\n- Typically performed from the **deck, ground, or water level**, or from permanent inspection structures\n- Underwater portions are generally limited to **observations during low-flow periods and/or probing** for scour and undermining\n- Follows established regular, reduced, or extended intervals per NBIS (23 CFR 650.311)\n\n[Source: FHWA Bridge Inspector's Reference Manual, p.83]\n\n---\n\n## In-Depth Inspection\n\nAn **In-Depth inspection** is a **close-up, detailed inspection** of one or more specific bridge members, using visual or nondestructive evaluation (NDE) techniques to identify deficiencies **not readily detectable through routine procedures**. Key characteristics include:\n\n- May require **hands-on inspection** at some locations\n- Uses **specialized equipment** for access or material investigation\n- Can be scheduled **independently** of routine inspections — more or less frequently as needed\n- Is **supplementary and limited in nature**, targeting specific features or known concerns\n- A **Qualified Team Leader must be present** and participate\n\n[Source: FHWA Bridge Inspector's Reference Manual, p.83 & p.100; TxDOT Bridge Inspection Manual, p.39]\n\n---\n\n## Key Differences Summary\n\n| Feature | Routine Inspection | In-Depth Inspection |\n|---|---|---|\n| **Scope** | Comprehensive, whole bridge | Focused on specific member(s) |\n| **Schedule** | Regularly scheduled intervals | Case-by-case, as needed |\n| **Access method** | Deck/ground/water level | Close-up, potentially hands-on |\n| **NDE techniques** | Generally not required | Used as needed |\n| **Purpose** | Overall condition assessment | Detect hidden/subtle deficiencies |\n| **Satisfies NBIS routine requirement?** | ✅ Yes | ❌ No |\n\n> ⚠️ **Important note:** Per TxDOT's Bridge Inspection Manual, In-Depth inspections **do not satisfy NBIS requirements** for routine, underwater, or NSTM inspections. Always verify specific requirements against the original documents. [Source: TxDOT Bridge Inspection Manual, p.39]",
+    "sources_retrieved": [
+      "BIM p.39",
+      "BIM p.3",
+      "BIRM p.100",
+      "BIRM p.1180",
+      "BIRM p.1306",
+      "BIRM p.83",
+      "BIRM p.85"
+    ],
+    "top_distance": 0.9877
+  },
+  {
+    "question": "When is a Fracture Critical Member inspection required?",
+    "expanded_query": "When is a Fracture Critical Member inspection required?",
+    "answer": "# Fracture Critical Member (NSTM) Inspection Requirements\n\n## Definition of Fracture Critical Members\n\nA fracture critical member (also called a **Non-Redundant Steel Tension Member or NSTM**) is a steel bridge member in which a single fracture could cause the bridge to collapse. These include members with no load path redundancy where failure of one member could lead to total or partial bridge collapse.\n\n[Source: TxDOT Bridge Coding Guide, p.51]\n\n---\n\n## When NSTM Inspections Are Required\n\n### Standard Inspection Interval\nNSTM inspections are **typically required every 24 months**, but can be performed more frequently if conditions warrant.\n[Source: Bridge Inspection Manual, p.39]\n\n---\n\n### Reduced Inspection Interval (6 or 12 months)\nA **reduced interval of 6 or 12 months** is required when:\n- **NSTM Inspection Condition (Item B.C.14) ≤ 4**, or\n- **Condition Rating for NSTM Superstructure (Item 59) or NSTM Substructure (Item 60) ≤ 4**\n\n> The choice between 6 or 12 months is based on engineering judgment considering the **severity or recent activity** of the deficiency (e.g., an active or newly identified crack). The basis must be clearly documented in the inspection report.\n\n[Source: Bridge Inspection Manual, p.42]\n\n---\n\n### Extended Inspection Interval (up to 48 months)\nAn **extended interval up to 48 months** is allowed when **all** of the following criteria are met:\n\n| Criterion | Requirement |\n|---|---|\n| Year Built | ≥ 1979 and fabricated per a fracture control plan |\n| Fatigue Details | No finite-life fatigue details, no history of fatigue cracks, no pin and hanger assemblies |\n| NSTM Condition Rating | ≥ 6 (Superstructure Item 59 and Substructure Item 60) |\n| Inventory Load Rating | ≥ 1.0 rating factor (or ≥ 36 tons for Item 66) |\n| Routine Permit Loads | Item B.LR.08 = A or N |\n\n[Source: Bridge Inspection Manual, p.42]\n\n---\n\n## What the Inspection Entails\n\nNSTM inspections must be:\n- **Hands-on** (within arm's reach of the component)\n- **Limited to areas under tension and/or areas subject to stress reversals**\n- May include **visual inspection and Non-Destructive Evaluation (NDE)** such as:\n  - Dye penetrant\n  - Magnetic particle\n  - Ultrasonic techniques\n  - Radiographic methods\n\n[Source: Bridge Inspection Manual, p.39 & p.42]\n\n---\n\n## Common NSTM Members Requiring Inspection\n\n- Tension flanges and webs of beams/girders in **two-girder bridges**\n- **Tension members of trusses** (e.g., eyebars in lower chords)\n- **Single steel caps** (majority are NSTM)\n- Members subject to **stress reversals**\n- Box beams, arches, main cables, pin-and-hanger assemblies, gusset plates\n\n[Source: Bridge Inspection Manual, p.42; FHWA BIRM, p.501]\n\n---\n\n> ⚠️ **Safety Notice:** For safety-critical determinations regarding NSTM identification and inspection intervals, always verify against the original TxDOT Bridge Inspection Manual and current 23 CFR 650.311 requirements. Engineering judgment by a qualified team leader or engineer is required.",
+    "sources_retrieved": [
+      "BIM p.42",
+      "BIRM p.468",
+      "BIRM p.501",
+      "BIM p.39",
+      "BCG p.51",
+      "BIRM p.470",
+      "BIRM p.405"
+    ],
+    "top_distance": 0.8104
+  },
+  {
+    "question": "What triggers an underwater bridge inspection?",
+    "expanded_query": "What triggers an underwater bridge inspection?",
+    "answer": "## Triggers for Underwater Bridge Inspection\n\nBased on the reference documents, underwater bridge inspections can be triggered by several categories of conditions:\n\n---\n\n### 1. Scheduled / Routine Intervals\nUnderwater inspections are required at **regular intervals not to exceed 60 months** for all bridges with submerged substructure elements.\n[Source: FHWA Bridge Inspector's Reference Manual, p.1186; Bridge Inspection Manual, p.45]\n\n---\n\n### 2. Reduced Interval Triggers (≤ 24 months)\nBridges must be inspected at intervals **no greater than 24 months** if any of the following apply:\n- Underwater portions rated in **serious or worse condition**\n- Channel or channel protection rated in **serious or worse condition**\n- **Scour Condition Rating ≤ 3**\n\n[Source: FHWA Bridge Inspector's Reference Manual, p.1186–1189; Bridge Inspection Manual, p.47]\n\n> ⚠️ **TxDOT-specific note:** TxDOT further allows the interval to be assigned as either **12 or 24 months** based on severity and recent progression of the deficiency, and this must be documented in the inspection report. [Source: Bridge Inspection Manual, p.47]\n\n---\n\n### 3. Event-Based / Unscheduled Triggers\nThe following events or conditions may warrant an **unscheduled Damage, In-depth, Special, or Scour Monitoring inspection**:\n\n| Trigger | Notes |\n|---|---|\n| **Unusual floods or major runoff events** | Inspect to ensure foundation integrity |\n| **Vessel/barge impact** | If visible damage above waterline is present |\n| **Unusual ice flows** | Can damage substructure and increase scour depth |\n| **Propeller wash from vessels** | Can cause scouring currents |\n| **Adverse environmental conditions** | Brackish, polluted, or chemically concentrated water |\n| **Floating debris buildup** | Effectively widens substructure, increasing scour risk |\n| **Evidence of deterioration or movement above waterline** | May indicate underwater distress |\n| **Significant earthquake events** | For bridges with substructures underwater |\n\n[Source: FHWA Bridge Inspector's Reference Manual, p.1186]\n\n---\n\n### 4. Scour Monitoring Triggers\nA **Scour Monitoring Inspection** is triggered during or after a **qualifying storm event**, as required by a **Scour Plan of Action (POA)**.\n[Source: FHWA Bridge Inspector's Reference Manual, p.1186]\n\n---\n\n### 5. In-Depth Inspection Triggers\nAn **In-depth Underwater Inspection** is triggered by:\n- Inconclusive results from a routine inspection\n- Critical structures where loss would have significant impact\n- Unique structures with uncertain structural performance\n- Prior evidence of distress\n- Planned reuse of an existing substructure or major rehabilitation\n\n[Source: FHWA Bridge Inspector's Reference Manual, p.1182]\n\n---\n\n> ⚠️ **Safety Reminder:** These criteria are based on the reference documents provided. Always verify trigger conditions and interval requirements against the current official versions of 23 CFR 650.311 and applicable TxDOT policy documents before making inspection scheduling decisions.",
+    "sources_retrieved": [
+      "BIRM p.1192",
+      "BIM p.47",
+      "BIRM p.1178",
+      "BIM p.45",
+      "BIRM p.1182",
+      "BIRM p.1189",
+      "BIRM p.1186"
+    ],
+    "top_distance": 0.4937
+  },
+  {
+    "question": "How is NBI Item 58 Deck Condition Rating defined?",
+    "expanded_query": "How is NBI (National Bridge Inventory) Item 58 (NBI Item 58 Deck Condition Rating) Deck Condition Rating defined?",
+    "answer": "## NBI Item 58 – Deck Condition Rating\n\n### Definition and Scope\n\nItem 58 describes the **overall condition rating of the bridge deck**. According to the TxDOT Bridge Coding Guide, it is rated and coded based on general condition ratings that compare the existing, in-place condition to the as-built condition. [Source: TxDOT Bridge Coding Guide, p.32]\n\nThe FHWA Bridge Inspector's Reference Manual further clarifies that the Deck rating **\"summarizes the physical condition rating of the deck, as determined from the inspection of all deck surfaces.\"** Notably, the condition of surface/protective systems, joints, expansion devices, curbs, sidewalks, parapets, fascia beams, bridge rail, and scuppers are **not included** in the deck rating, but should still be noted in the inspection form. [Source: FHWA Bridge Inspector's Reference Manual, p.153]\n\n---\n\n### What to Inspect for Concrete Decks\n\nThe TxDOT Coding Guide specifies that concrete decks should be inspected for:\n- Cracking\n- Scaling\n- Spalling\n- Leaching\n- Chloride contamination\n- Potholing\n- Delamination\n- Full or partial depth failures\n\n[Source: TxDOT Bridge Coding Guide, p.32]\n\n---\n\n### Condition Rating Scale (0–9)\n\n| Code | Description |\n|------|-------------|\n| 9 | Excellent Condition |\n| 8 | Very Good – no problems noted |\n| 7 | Good – some minor problems |\n| 6 | Satisfactory – minor deterioration |\n| 5 | Fair – primary elements sound, minor section loss/cracking/spalling |\n| 4 | Poor – advanced section loss, deterioration, spalling |\n| 3 | Serious – local failures possible; fatigue/shear cracks may be present |\n| 2 | Critical – advanced deterioration; may require closure |\n| 1 | \"Imminent\" Failure – major deterioration; bridge closed |\n| 0 | Failed – out of service, beyond corrective action |\n| N | Not Applicable (used for all culverts) |\n\n[Source: TxDOT Bridge Coding Guide, p.32]\n\nRatings are grouped broadly as:\n- **7–9: Good**\n- **5–6: Fair**\n- **0–4: Poor**\n\n[Source: FHWA Bridge Inspector's Reference Manual, p.153]\n\n---\n\n### Key Rules for Assignment\n\n1. **Condition only** – Do not base ratings on known chloride presence or low compressive strength from core samples; rate solely on **observed, physical condition** at time of inspection. [Source: TxDOT Bridge Inspection Manual, p.60]\n2. **No temporary repairs** – Only permanently installed repairs are considered. [Source: TxDOT Bridge Inspection Manual, p.60]\n3. **Load capacity excluded** – The load-carrying capacity or posting status shall have **no influence** on condition ratings. [Source: TxDOT Bridge Coding Guide, p.32]\n4. **Independence from element ratings** – Per TxDOT, the Deck (Item 58) component is **independent** of its associated element ratings such as joints, railings, and wearing surface. [Source: TxDOT Bridge Inspection Manual, p.60]\n5. **Written comments required** for any condition rating of **7 or lower**. [Source: TxDOT Bridge Inspection Manual, p.60]\n\n---\n\n> ⚠️ **Safety Notice:** For safety-critical rating decisions, always verify against the current SNBI (Subsection 7.1), TxDOT Coding Guide, and the original bridge inspection documents. Ratings of 2 or below constitute a **critical finding** requiring FHWA notification within 24 hours for NHS bridges. [Source: FHWA Bridge Inspector's Reference Manual, p.1347]",
+    "sources_retrieved": [
+      "BIRM p.1347",
+      "BIRM p.153",
+      "BIRM p.1280",
+      "BCG p.32",
+      "BCG p.38",
+      "BIRM p.151",
+      "BIM p.60"
+    ],
+    "top_distance": 0.6464
+  },
+  {
+    "question": "What does a Condition Rating of 4 mean for a bridge element?",
+    "expanded_query": "What does a Condition Rating of 4 mean for a bridge element?",
+    "answer": "## Condition Rating of 4 — Bridge Element\n\n### Classification\nA condition rating of **4 falls within the \"Poor\" range (ratings 0–4)**, which indicates that the **structural capacity of the component is affected**.\n\n[Source: FHWA Bridge Inspector's Reference Manual, p.153]\n[Source: FHWA Bridge Inspector's Reference Manual, p.1280]\n\n---\n\n### Specific Description for Rating 4\nPer the TxDOT Bridge Coding Guide, a rating of **4 corresponds to \"POOR CONDITION\"**, described as:\n\n> *\"Advanced section loss, deterioration, spalling or scour.\"*\n\n[Source: TxDOT Bridge Coding Guide, p.32]\n\n---\n\n### Key Implications of a Rating of 4\n\n| Aspect | Detail |\n|--------|--------|\n| **Condition Category** | Poor |\n| **Structural Impact** | Structural capacity is **affected or jeopardized** |\n| **Typical Actions** | May necessitate **monitoring, load restrictions, and/or corrective actions** to keep the bridge open |\n| **Written Comments** | **Required** — comments are mandatory for any condition rating of 7 or lower |\n\n[Source: Bridge Inspection Manual, p.60]\n[Source: FHWA Bridge Inspector's Reference Manual, p.153]\n\n---\n\n### Important Reminders\n- Condition ratings reflect **observed, physical deterioration** — not design deficiency or known chloride presence\n- Only **permanently installed repairs** may be considered when assigning ratings\n- **⚠️ Safety-critical judgment:** Always verify rating assignments against the original SNBI Subsection 7.1 and TxDOT Coding Guide for final determinations\n\n[Source: Bridge Inspection Manual, p.60]",
+    "sources_retrieved": [
+      "BIM p.62",
+      "BIRM p.153",
+      "BIRM p.1280",
+      "BCG p.32",
+      "BIM p.5",
+      "ECM p.58",
+      "BIM p.60"
+    ],
+    "top_distance": 0.5741
+  },
+  {
+    "question": "What is the definition of a Critical Finding in bridge inspection?",
+    "expanded_query": "What is the definition of a Critical Finding in bridge inspection?",
+    "answer": "## Definition of a Critical Finding in Bridge Inspection\n\n### Core Definition\n\nA **Critical Finding** is formally defined as:\n\n> *\"A structural or safety related deficiency that requires immediate action to ensure public safety.\"*\n> [Source: FHWA Bridge Inspector's Reference Manual, p.160; also consistent with Bridge Inspection Manual, p.50]\n\nThis definition is codified under federal regulation **23 CFR 650.305**.\n\n---\n\n### Two Categories of Critical Findings\n\nCritical findings fall into two broad types:\n\n| Category | Description |\n|---|---|\n| **Structural** | Deficiencies causing loss of adequate load capacity or stability, potentially leading to **partial or total collapse** |\n| **Safety** | Non-structural deficiencies that **jeopardize the safety** of motorists or pedestrians |\n\n[Source: FHWA Bridge Inspector's Reference Manual, p.160]\n\n---\n\n### Minimum Qualifying Criteria\n\nAt a minimum, critical findings include deficiencies that warrant:\n\n- **Full or partial closure** of any bridge\n- An **NSTM** (Nonredundant Steel Tension Member) rated **3 or less**\n- A **deck, superstructure, substructure, or culvert** rated **2 or worse**\n- **Channel or scour condition** rated **2 or worse**\n- **Immediate load restriction, posting, or repair** (including shoring) to remain open\n\n[Source: FHWA Bridge Inspector's Reference Manual, p.160]\n\n---\n\n### Types of Deficiencies Included\n\nDeficiencies include, but are not limited to:\n- Scour, damage, corrosion, section loss\n- Settlement, cracking, deflection, distortion\n- Delamination, loss of bearing\n- **Any condition posing an imminent threat to public safety**\n\n[Source: Bridge Inspection Manual, p.50]\n\n---\n\n> ⚠️ **Safety Notice:** Critical finding determinations have direct public safety implications. Always verify against the original NBIS regulations (23 CFR 650.305) and your agency's specific procedures. In Texas, TxDOT-specific protocols apply as outlined in the Bridge Inspection Manual.",
+    "sources_retrieved": [
+      "BIRM p.161",
+      "BIRM p.96",
+      "BIRM p.163",
+      "BIRM p.1302",
+      "BIRM p.160",
+      "BIRM p.102",
+      "BIM p.50"
+    ],
+    "top_distance": 0.457
+  },
+  {
+    "question": "What are the FUA priority levels and their required timeframes?",
+    "expanded_query": "What are the FUA (Follow-Up Action) priority levels and their required timeframes?",
+    "answer": "## FUA Priority Levels and Required Timeframes\n\nAccording to the TxDOT Bridge Inspection Manual, Follow-Up Action (FUA) items are classified into **four priority levels**, each with a specified timeframe for completion:\n\n| Priority Level | Required Timeframe |\n|---|---|\n| **Level 1 (PL 1)** | Actions recommended to be completed **within 30 days** |\n| **Level 2 (PL 2)** | Actions recommended to be completed **within 6 months** |\n| **Level 3 (PL 3)** | Actions recommended to be completed **within 24 months** |\n| **Level 4 (PL 4)** | Actions recommended **with no set timeframe** for completion |\n\n[Source: Bridge Inspection Manual, p.105]\n\n---\n\n### Additional Notification Requirements for PL 1 & PL 2:\n\n- The inspector is responsible for **notifying the District Bridge Inspection Office by phone** as soon as practical, but **no later than the day after discovery**.\n- These items must be **entered into the Maintenance Module** as soon as practical, but **no later than 1 week after discovery**.\n- For **Off-System bridges**, PL 1 and PL 2 FUAs must be **transmitted to owners as soon as districts become aware of them**.\n\n[Source: Bridge Inspection Manual, p.105 and p.114]\n\n---\n\n> ⚠️ **Safety Notice:** For safety-critical judgments related to Priority Level assignments, always verify against the original TxDOT Bridge Inspection Manual and consult with your District Bridge Inspection Coordinator.",
+    "sources_retrieved": [
+      "BIM p.115",
+      "BIRM p.1338",
+      "BIRM p.1336",
+      "BIM p.54",
+      "BIM p.112",
+      "BIM p.105",
+      "BIM p.114"
+    ],
+    "top_distance": 0.7952
+  },
+  {
+    "question": "What steps must be taken immediately after identifying a Critical Finding?",
+    "expanded_query": "What steps must be taken immediately after identifying a Critical Finding?",
+    "answer": "# Immediate Steps After Identifying a Critical Finding\n\n## 1. Immediate Notification\n\nUpon identifying a potential critical finding, **immediately report the deficiency to the appropriate agency official, bridge owner, or governing authority.**\n\n> [Source: FHWA Bridge Inspector's Reference Manual, p.160]\n\nFor **TxDOT specifically**, Bridge Inspectors must **notify the District Bridge Inspection Coordinator** of Critical Findings, which triggers an automated email to district bridge and maintenance staff and the Bridge Division (BRG).\n\n> [Source: TxDOT Bridge Inspection Manual, p.54]\n\n---\n\n## 2. Verbal or Written Notification\n\n- A **verbal or e-mail notification** is typically required when the potential critical deficiency is identified.\n- An **immediate written notification** may also be required, documenting:\n  - Extent of the deficiency\n  - Notes, photographs, sketches and drawings\n  - Measurements\n  - Possible causes\n  - Recommendations for repair\n\n> [Source: FHWA Bridge Inspector's Reference Manual, p.160]\n\n---\n\n## 3. Temporary Protective Actions\n\nTemporary actions must be taken to **safeguard the public** until proper repairs are completed. These may include:\n\n| Action | Purpose |\n|--------|---------|\n| Load posting | Restrict heavy vehicles |\n| Traffic restrictions from damaged area | Prevent access to hazard |\n| Speed restrictions | Reduce impact risk |\n| Temporary lane closure | Control traffic flow |\n| Temporary shoring/cribbing | Stabilize structure |\n| Complete bridge closure | Full public protection if needed |\n\n> [Source: FHWA Bridge Inspector's Reference Manual, p.160–161]\n\n---\n\n## 4. FHWA Notification (NHS Bridges)\n\nFor bridges on the **National Highway System (NHS)**, FHWA must be notified **within 24 hours** of discovery when:\n- Full or partial bridge closure occurs\n- NSTM Inspection Item is coded **3 or less**\n\nAll critical findings must be reported **monthly** (or as requested) in written status reports to FHWA until resolved.\n\n> [Source: FHWA Bridge Inspector's Reference Manual, p.160]\n> [Source: TxDOT Bridge Inspection Manual, p.54]\n\n---\n\n## 5. TxDOT-Specific: Plan for Corrective Actions\n\nTxDOT will develop a **plan for corrective actions within 30 days** of a critical finding notification for on-system bridges. The Maintenance Module Follow-Up Action (FUA) must be updated and tracked until the critical finding is **fully resolved**.\n\n> [Source: TxDOT Bridge Inspection Manual, p.50, p.54]\n\n---\n\n## 6. Further Engineering Assessment\n\nIf needed, the finding should be **assessed by other engineers or experts** to:\n- Determine severity\n- Develop a proposed repair strategy or plan of action\n\n> [Source: FHWA Bridge Inspector's Reference Manual, p.161]\n\n---\n\n> ⚠️ **Safety-Critical Reminder:** These procedures involve public safety decisions. Always verify against the original FHWA BIRM and TxDOT Bridge Inspection Manual, and follow your agency's established protocols. Procedures may vary by agency and bridge ownership.",
+    "sources_retrieved": [
+      "BIRM p.161",
+      "BIRM p.163",
+      "BIRM p.1345",
+      "BIRM p.1302",
+      "BIM p.54",
+      "BIRM p.160",
+      "BIM p.50"
+    ],
+    "top_distance": 0.7547
+  },
+  {
+    "question": "What does a Scour Critical Rating of 3 indicate?",
+    "expanded_query": "What does a Scour Critical Rating of 3 indicate?",
+    "answer": "## Scour Critical Rating of 3\n\nBased on the TxDOT Bridge Coding Guide, a Scour Critical Rating of **3** indicates the following:\n\n> **\"Bridge foundations determined to be stable for calculated scour conditions; field review indicates action is required to protect exposed foundations from effects of additional erosion and corrosion.\"**\n>\n> [Source: TxDOT Bridge Coding Guide, p.62]\n\n### Key Points to Understand This Rating:\n\n- The bridge foundations are currently **determined to be stable** under calculated scour conditions.\n- However, a **field review has identified exposed foundations** that are vulnerable to further deterioration.\n- **Action is required** to protect those exposed foundations from ongoing erosion and corrosion, even though the bridge is **not yet classified as scour critical**.\n- This rating sits between a stable condition (Ratings 1–2) and a scour critical designation (Ratings 0–1 on the critical end).\n\n### Important Note:\nThe coding guide further states that **whenever a rating factor of 4 or below is determined for Item 113, the rating factor for Item 60 (Substructure) may need to be revised** to reflect the severity of actual scour and resultant damage to the bridge. [Source: TxDOT Bridge Coding Guide, p.62]\n\n> ⚠️ **Safety Reminder:** For safety-critical scour determinations, always verify findings against the original TxDOT Bridge Coding Guide and consult qualified hydraulic/foundation engineers as required.",
+    "sources_retrieved": [
+      "BIRM p.161",
+      "BIRM p.1143",
+      "BIRM p.1345",
+      "ECM p.33",
+      "BIRM p.1168",
+      "BIRM p.1172",
+      "BCG p.62"
+    ],
+    "top_distance": 0.915
+  }
+]
