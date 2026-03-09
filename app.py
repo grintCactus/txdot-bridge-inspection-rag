@@ -483,21 +483,20 @@ with st.sidebar:
     st.divider()
     st.markdown("<span style='color:#888;font-size:12px;letter-spacing:0.8px'>KNOWLEDGE BASE</span>", unsafe_allow_html=True)
 
-    RESOURCE_DIR = BASE.parent / "resource"
+    RESOURCE_DIR = BASE / "resource"
     docs = [
-        ("BIM",  "Bridge Inspection Manual",                  "ins.pdf"),
-        ("BCG",  "Bridge Coding Guide",                       "coding.pdf"),
-        ("ECM",  "Elements Coding Manual",                    "elements.pdf"),
-        ("BIRM", "FHWA Inspector's Reference Manual",         "Bridge Inspector\u2019s.pdf"),
-        ("CRM",  "Concrete Repair Manual",                    "crm.pdf"),
-        ("SEG",  "Scour Evaluation Guide",                    "scour-guide.pdf"),
-        ("BRM",  "Bridge Railing Manual",                     "rlg.pdf"),
-        ("BPG",  "Bridge Preservation Guide",                 "bridge-preservation-guide.pdf"),
-        ("SNBI", "SNBI Errata",                               "errata1_to_snbi_march_2022_publication.pdf"),
-        ("UWBI", "Underwater Bridge Inspection Manual",       "Underwater Bridge .pdf"),
+        ("BIM",  "Bridge Inspection Manual",             "ins.pdf",                                      None),
+        ("BCG",  "Bridge Coding Guide",                  "coding.pdf",                                   None),
+        ("ECM",  "Elements Coding Manual",               "elements.pdf",                                 None),
+        ("BIRM", "FHWA Inspector's Reference Manual",    None,  "https://www.fhwa.dot.gov/bridge/inspection/reference/"),
+        ("CRM",  "Concrete Repair Manual",               "crm.pdf",                                      None),
+        ("SEG",  "Scour Evaluation Guide",               "scour-guide.pdf",                              None),
+        ("BRM",  "Bridge Railing Manual",                "rlg.pdf",                                      None),
+        ("BPG",  "Bridge Preservation Guide",            "bridge-preservation-guide.pdf",                None),
+        ("SNBI", "SNBI Errata",                          "errata1_to_snbi_march_2022_publication.pdf",   None),
+        ("UWBI", "Underwater Bridge Inspection Manual",  "Underwater Bridge .pdf",                       None),
     ]
-    for short, full, filename in docs:
-        pdf_path = RESOURCE_DIR / filename
+    for short, full, filename, ext_url in docs:
         col_label, col_btn = st.columns([3, 1])
         with col_label:
             st.markdown(
@@ -507,17 +506,22 @@ with st.sidebar:
                 unsafe_allow_html=True
             )
         with col_btn:
-            if pdf_path.exists():
+            if filename and (RESOURCE_DIR / filename).exists():
                 st.download_button(
                     label="↓",
-                    data=pdf_path.read_bytes(),
+                    data=(RESOURCE_DIR / filename).read_bytes(),
                     file_name=filename,
                     mime="application/pdf",
                     key=f"dl_{short}",
                     help=f"Download {full}",
                 )
+            elif ext_url:
+                st.markdown(
+                    f"<a href='{ext_url}' target='_blank' style='color:#aaa;font-size:13px;text-decoration:none'>↗</a>",
+                    unsafe_allow_html=True
+                )
             else:
-                st.markdown("<span style='color:#555;font-size:11px'>N/A</span>", unsafe_allow_html=True)
+                st.markdown("<span style='color:#555;font-size:11px'>—</span>", unsafe_allow_html=True)
 
     st.divider()
     st.markdown("<span style='color:#888;font-size:12px;letter-spacing:0.8px'>QUESTION TYPES</span>", unsafe_allow_html=True)

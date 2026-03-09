@@ -11,8 +11,8 @@ venv/
 data/parsed/
 data/chunks/
 
-# PDF files (too large, proprietary)
-../resource/
+# PDF files — BIRM excluded (121MB > GitHub limit)
+resource/Bridge Inspector's.pdf
 
 # Python cache
 __pycache__/
