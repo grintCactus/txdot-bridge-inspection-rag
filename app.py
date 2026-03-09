@@ -30,6 +30,57 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
+# ── Login ─────────────────────────────────────────────────────────────────────
+
+def check_login():
+    """Show login form and return True only when authenticated."""
+    if st.session_state.get("authenticated"):
+        return True
+
+    st.markdown("""
+    <style>
+    #MainMenu, footer, header { visibility: hidden; }
+    [data-testid="stAppViewContainer"] { background-color: #f9f9f8; }
+    .login-box {
+        max-width: 380px; margin: 120px auto 0; padding: 40px;
+        background: #fff; border: 1px solid #e0ddd5;
+        border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    }
+    .login-title { font-size: 22px; font-weight: 700; color: #1a1a1a; margin-bottom: 4px; }
+    .login-sub   { font-size: 14px; color: #888; margin-bottom: 28px; }
+    </style>
+    <div class="login-box">
+      <div class="login-title">🌉 TxDOT Bridge Inspection</div>
+      <div class="login-sub">Sign in to continue</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+    with st.form("login_form"):
+        username = st.text_input("Username")
+        password = st.text_input("Password", type="password")
+        submitted = st.form_submit_button("Sign in", use_container_width=True)
+
+    if submitted:
+        # Read credentials from secrets.toml (local) or env vars (Railway)
+        # Env var format: CRED_<USERNAME>=<PASSWORD>  e.g. CRED_ADMIN=txdot2024
+        credentials = dict(st.secrets.get("credentials", {}))
+        for key, val in os.environ.items():
+            if key.startswith("CRED_"):
+                user = key[5:].lower()
+                credentials[user] = val
+
+        if username in credentials and credentials[username] == password:
+            st.session_state.authenticated = True
+            st.session_state.username = username
+            st.rerun()
+        else:
+            st.error("Incorrect username or password.")
+
+    return False
+
+if not check_login():
+    st.stop()
+
 # ── Global CSS ─────────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
@@ -399,9 +450,20 @@ for key, val in [
 # ── Sidebar ────────────────────────────────────────────────────────────────────
 with st.sidebar:
     st.markdown("## 🌉 TxDOT Bridge RAG")
+
+    # User info + logout
+    username = st.session_state.get("username", "")
+    col_u, col_out = st.columns([3, 1])
+    with col_u:
+        st.markdown(f"<span style='color:#888;font-size:13px'>👤 {username}</span>", unsafe_allow_html=True)
+    with col_out:
+        if st.button("⏻", help="Sign out", key="logout_btn"):
+            st.session_state.authenticated = False
+            st.session_state.username = ""
+            st.rerun()
+
     try:
         openai_client, claude_client, collection = init_clients()
-        st.markdown(f"<span style='color:#888;font-size:13px'>✅ {collection.count()} docs indexed</span>", unsafe_allow_html=True)
     except Exception as e:
         st.error(f"Index error: {e}")
         st.stop()
