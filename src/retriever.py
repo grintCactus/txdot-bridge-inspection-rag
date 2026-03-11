@@ -186,6 +186,20 @@ def retrieve_type_c(
     return all_chunks[:8]  # Cap at 8 for Type C
 
 
+RELEVANCE_THRESHOLD = 0.55  # cosine distance; lower = more similar
+
+
+def check_relevance(chunks: list[dict], threshold: float = RELEVANCE_THRESHOLD) -> bool:
+    """Return True if at least one chunk is similar enough to be useful.
+    ChromaDB cosine distance: 0=identical, 1=orthogonal, 2=opposite.
+    Empirically, distance > 0.55 means the documents likely don't cover the question.
+    """
+    if not chunks:
+        return False
+    best_distance = min(c["distance"] for c in chunks)
+    return best_distance < threshold
+
+
 def build_context(chunks: list[dict]) -> str:
     """Format chunks into the reference section of a prompt."""
     parts = []

@@ -16,7 +16,7 @@ import anthropic
 from openai import OpenAI
 
 from classifier import classify, format_clarification_request
-from retriever import retrieve_type_a, retrieve_type_b, retrieve_type_c, build_context
+from retriever import retrieve_type_a, retrieve_type_b, retrieve_type_c, build_context, check_relevance
 
 BASE = pathlib.Path(__file__).parent
 CHROMA_DIR = str(BASE / "db" / "chroma")
@@ -346,9 +346,13 @@ SYSTEM_PROMPT = """You are an intelligent Q&A assistant for TxDOT bridge inspect
 Core rules:
 1. Answer ONLY based on the [Reference Documents] provided. Do not fabricate information.
 2. Cite the source for every key conclusion — format: [Source: <manual>, p.<page>]
-3. If the documents don't contain relevant information, clearly say so.
-4. For safety-critical judgments, remind the user to verify against the original document.
-5. Respond in the same language the user uses."""
+3. If the reference documents do not contain enough information to answer the question:
+   - Say explicitly: "The TxDOT knowledge base does not cover this topic."
+   - Do NOT guess, infer beyond what is written, or piece together a vague answer.
+   - Suggest the user consult the original manual directly.
+4. If the documents partially cover the topic, answer only the covered parts and clearly note what is missing.
+5. For safety-critical judgments, remind the user to verify against the original document.
+6. Respond in the same language the user uses."""
 
 TYPE_A_TEMPLATE = """[Reference Documents]
 {context}
@@ -594,16 +598,25 @@ if prompt:
                 chunks = retrieve_type_b(question_full, defect_info, collection, openai_client, claude_client)
             sources = format_sources(chunks)
 
-            with st.spinner("Generating answer…"):
-                answer = generate_answer(question_full, q_type, chunks, defect_info, claude_client, st.session_state.history)
+            if not check_relevance(chunks):
+                answer = (
+                    "The TxDOT knowledge base does not appear to cover this specific topic. "
+                    "The retrieved documents had low relevance to your question.\n\n"
+                    "Please consult the relevant manual directly, or try rephrasing your question "
+                    "with more specific bridge inspection terminology."
+                )
+                st.markdown(answer)
+                st.session_state.messages.append({"role": "assistant", "content": answer})
+            else:
+                with st.spinner("Generating answer…"):
+                    answer = generate_answer(question_full, q_type, chunks, defect_info, claude_client, st.session_state.history)
 
-            st.markdown(answer)
-            with st.expander(f"📎 {len(sources)} sources cited"):
-                for s in sources:
-                    st.markdown(f"<span style='font-size:12px;color:#666'>· {s}</span>", unsafe_allow_html=True)
-            st.markdown('<span class="badge badge-b">Type B · Compliance Judgment</span>', unsafe_allow_html=True)
-
-            st.session_state.messages.append({"role": "assistant", "content": answer, "sources": sources, "q_type": q_type})
+                st.markdown(answer)
+                with st.expander(f"📎 {len(sources)} sources cited"):
+                    for s in sources:
+                        st.markdown(f"<span style='font-size:12px;color:#666'>· {s}</span>", unsafe_allow_html=True)
+                st.markdown('<span class="badge badge-b">Type B · Compliance Judgment</span>', unsafe_allow_html=True)
+                st.session_state.messages.append({"role": "assistant", "content": answer, "sources": sources, "q_type": q_type})
             st.session_state.history += [{"role": "user", "content": question_full}, {"role": "assistant", "content": answer}]
             st.session_state.history = st.session_state.history[-6:]
             st.session_state.awaiting_clarification = False
@@ -634,18 +647,30 @@ if prompt:
 
                 sources = format_sources(chunks)
 
-                with st.spinner("Generating answer…"):
-                    answer = generate_answer(prompt, q_type, chunks, "", claude_client, st.session_state.history)
+                if not check_relevance(chunks):
+                    answer = (
+                        "The TxDOT knowledge base does not appear to cover this specific topic. "
+                        "The retrieved documents had low relevance to your question.\n\n"
+                        "Please consult the relevant manual directly, or try rephrasing your question "
+                        "with more specific bridge inspection terminology."
+                    )
+                    st.markdown(answer)
+                    st.session_state.messages.append({"role": "assistant", "content": answer})
+                    st.session_state.history += [{"role": "user", "content": prompt}, {"role": "assistant", "content": answer}]
+                    st.session_state.history = st.session_state.history[-6:]
+                else:
+                    with st.spinner("Generating answer…"):
+                        answer = generate_answer(prompt, q_type, chunks, "", claude_client, st.session_state.history)
 
-                st.markdown(answer)
-                with st.expander(f"📎 {len(sources)} sources cited"):
-                    for s in sources:
-                        st.markdown(f"<span style='font-size:12px;color:#666'>· {s}</span>", unsafe_allow_html=True)
+                    st.markdown(answer)
+                    with st.expander(f"📎 {len(sources)} sources cited"):
+                        for s in sources:
+                            st.markdown(f"<span style='font-size:12px;color:#666'>· {s}</span>", unsafe_allow_html=True)
 
-                badges = {"type_a": ("A", "a", "Regulation Lookup"), "type_b": ("B", "b", "Compliance Judgment"), "type_c": ("C", "c", "Procedure")}
-                letter, cls, lbl = badges.get(q_type, ("?", "a", ""))
-                st.markdown(f'<span class="badge badge-{cls}">Type {letter} · {lbl}</span>', unsafe_allow_html=True)
+                    badges = {"type_a": ("A", "a", "Regulation Lookup"), "type_b": ("B", "b", "Compliance Judgment"), "type_c": ("C", "c", "Procedure")}
+                    letter, cls, lbl = badges.get(q_type, ("?", "a", ""))
+                    st.markdown(f'<span class="badge badge-{cls}">Type {letter} · {lbl}</span>', unsafe_allow_html=True)
 
-                st.session_state.messages.append({"role": "assistant", "content": answer, "sources": sources, "q_type": q_type})
-                st.session_state.history += [{"role": "user", "content": prompt}, {"role": "assistant", "content": answer}]
-                st.session_state.history = st.session_state.history[-6:]
+                    st.session_state.messages.append({"role": "assistant", "content": answer, "sources": sources, "q_type": q_type})
+                    st.session_state.history += [{"role": "user", "content": prompt}, {"role": "assistant", "content": answer}]
+                    st.session_state.history = st.session_state.history[-6:]
